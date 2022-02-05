@@ -1,0 +1,13 @@
+[package]
+name = "playground"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = { git = "https://github.com/gfx-rs/wgpu", rev = "3e0305d27d790034fc54ef871f733399fb7cd374" }
+pollster = "0.2.4"
+runtime = { version = "0.1.0", path = "../runtime" }
+bitflags = "1"
+bytemuck = { version = "1.4", features = ["derive"] }
+glam = { version = "0.20.2", features = ["bytemuck"] }
+log = "0.4"

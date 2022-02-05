@@ -1,0 +1,24 @@
+[package]
+name = "runtime"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winit = "0.26.1"
+wgpu = { git = "https://github.com/gfx-rs/wgpu", rev = "3e0305d27d790034fc54ef871f733399fb7cd374", features = [
+    "spirv",
+] }
+pollster = "0.2.4"
+regex = "1.5"
+once_cell = "1.9.0"
+naga = { version = "0.8.5", features = [
+    "glsl-in",
+    "spv-in",
+    "spv-out",
+    "wgsl-in",
+    "wgsl-out",
+] }
+thiserror = "1.0.21"
+tracing = "0.1"

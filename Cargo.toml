@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    # "crates/aniline_drivers",
+    "crates/playground",
+    "crates/runtime",
+]
